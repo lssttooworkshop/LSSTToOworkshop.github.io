@@ -623,6 +623,19 @@ input, select, textarea {
 		margin: 0 0 0.4875rem 0;
 	}
 
+    label:hide {
+    display: none;
+    }
+
+    label:hover + .hide {
+    display: block;
+    color: red;
+    }
+    .hide {
+    display: none;
+    }
+ 
+
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
@@ -2314,6 +2327,36 @@ input, select, textarea {
 			position: relative;
 			width: 100%;
 		}
+        .panel > .inner2 {
+			padding: 3.5rem 3.5rem 2rem 3.5rem ;
+			display: -moz-flex;
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+			-moz-flex-grow: 1;
+			-webkit-flex-grow: 1;
+			-ms-flex-grow: 1;
+			flex-grow: 1;
+			-moz-flex-shrink: 1;
+			-webkit-flex-shrink: 1;
+			-ms-flex-shrink: 1;
+			flex-shrink: 1;
+			-moz-justify-content: center;
+			-webkit-justify-content: center;
+			-ms-justify-content: center;
+			justify-content: center;
+			-moz-align-items: -moz-flex-start;
+			-webkit-align-items: -webkit-flex-start;
+			-ms-align-items: -ms-flex-start;
+			align-items: flex-start;
+			-moz-flex-direction: column;
+			-webkit-flex-direction: column;
+			-ms-flex-direction: column;
+			flex-direction: column;
+			position: relative;
+			width: 100%;
+		}
+
 
 			.panel > .inner.columns {
 				display: -moz-flex;
@@ -2541,6 +2584,10 @@ input, select, textarea {
 
 		.panel.small {
 			width: 35rem;
+		}
+
+        .panel.tiny {
+			width: 20rem;
 		}
 
 		.panel.medium {
