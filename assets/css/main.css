@@ -246,7 +246,8 @@ input, select, textarea {
 
 	@media screen and (max-width: 1736px) {
 
-		html {
+		
+        html {
 			height: auto;
 		}
 
@@ -1061,22 +1062,24 @@ input, select, textarea {
 
 	ol {
 		list-style: decimal;
-		margin: 0 0 1.5rem 0;
-		padding-left: 1.25rem;
+		margin: 10 0 3.5rem 0;
+		padding-left: 2.25rem;
 	}
 
 		ol li {
-			padding-left: 0.25rem;
+			padding-left: 2.25rem;
 		}
 
 	ul {
 		list-style: disc;
 		margin: 0 0 1.5rem 0;
-		padding-left: 1rem;
+        font-weight: 400;
+		padding-left: 2rem;
 	}
 
 		ul li {
-			padding-left: 0.5rem;
+			padding-left: 10.5rem;
+            padding-left: 10.5rem;
 		}
 
 		ul.alt {
@@ -1181,6 +1184,7 @@ input, select, textarea {
 
 /* Icons */
 
+
 	ul.icons {
 		cursor: default;
 		list-style: none;
@@ -1218,6 +1222,7 @@ input, select, textarea {
 		list-style: none;
 		margin: 0 0 1.5rem 0;
 		padding-left: 0;
+        
 	}
 
 		ul.grid-icons .icon {
@@ -1370,6 +1375,22 @@ input, select, textarea {
 					}
 
 		}
+
+.icon-container {
+  position: relative;
+  display: inline-block;
+}
+
+.popup-label {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
 
 /* Contact Icons */
 
@@ -2371,10 +2392,10 @@ input, select, textarea {
 				-webkit-align-items: center;
 				-ms-align-items: center;
 				align-items: center;
-				-moz-flex-direction: row;
-				-webkit-flex-direction: row;
-				-ms-flex-direction: row;
-				flex-direction: row;
+				-moz-flex-direction: column;
+				-webkit-flex-direction: column;
+				-ms-flex-direction: column;
+				flex-direction: column;
 			}
 
 				.panel > .inner.columns > * {
@@ -3361,10 +3382,10 @@ input, select, textarea {
 			}
 
 		.panel.banner.left {
-			-moz-flex-direction: row;
-			-webkit-flex-direction: row;
-			-ms-flex-direction: row;
-			flex-direction: row;
+			-moz-flex-direction: column;
+			-webkit-flex-direction: column;
+			-ms-flex-direction: column;
+			flex-direction: column;
 		}
 
 		.panel.banner.right {
@@ -3602,10 +3623,10 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		-moz-flex-direction: row;
-		-webkit-flex-direction: row;
-		-ms-flex-direction: row;
-		flex-direction: row;
+		-moz-flex-direction: column;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
 		-moz-transition: opacity 1s ease-out, -moz-transform 0.75s ease-out;
 		-webkit-transition: opacity 1s ease-out, -webkit-transform 0.75s ease-out;
 		-ms-transition: opacity 1s ease-out, -ms-transform 0.75s ease-out;
