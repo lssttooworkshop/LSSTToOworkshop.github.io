@@ -298,7 +298,7 @@ input, select, textarea {
 		color: rgba(255, 255, 255, 0.75);
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 1rem;
-		font-weight: 300;
+		font-weight: 500;
 		line-height: 1.65;
 	}
 
@@ -2237,19 +2237,19 @@ input, select, textarea {
 			}
 
 			.panel > *.color1 {
-				background-image: url("../../images/overlay.png"), linear-gradient(45deg, #D9F7F6 20%, #D9F7F6 60%, #D9F7F6);
+				background-image: url("../../images/overlay.png"), linear-gradient(45deg, #009FA1 20%, #009FA1 60%, #009FA1);
 				background-size: 128px 128px, auto;
-				background-color: #D9F7F6;
+				background-color: #009FA1;
 			}
 
 			.panel > *.color2 {
-				background-image: url("../../images/overlay.png"), linear-gradient(45deg, #D9F7F6 20%, #009FA1 60%, #0C4A47);
+				background-image: url("../../images/overlay.png"), linear-gradient(45deg, #D9F7F6 20%, #D9F7F6 60%, #D9F7F6);
 				background-size: 128px 128px, auto;
 				background-color: #e37b7c;
 			}
 
 			.panel > *.color3 {
-				background-image: url("../../images/overlay.png"), linear-gradient(45deg, #D9F7F6 20%, #009FA1 60%, #0C4A47);
+				background-image: url("../../images/overlay.png"), linear-gradient(45deg, #009FA1 20%, #009FA1 60%, #009FA1);
 				background-size: 128px 128px, auto;
 				background-color: #ffe4b4;
 			}
@@ -2259,6 +2259,11 @@ input, select, textarea {
 				background-size: 128px 128px, auto;
 				background-color: #353865;
 			}
+            .panel > *.color10 {
+			 background-image: url("../../images/overlay.png"), linear-gradient(45deg, #009FA1 20%, #009FA1 60%, #009FA1);
+				background-size: 128px 128px, auto;
+				background-color: #009FA1;
+		}
 
 			.panel > *.color1-alt {
 				background-image: url("../../images/overlay.png"), linear-gradient(45deg, #D9F7F6 20%, #D9F7F6 60%, #D9F7F6);
@@ -2605,6 +2610,7 @@ input, select, textarea {
 		.panel .span-10 {
 			width: 100rem;
 		}
+
 
         .panel .span-10-10 {
 			width: 100rem;
@@ -3462,7 +3468,108 @@ input, select, textarea {
 
 /* Panel (Spotlight) */
 
-	.panel.spotlight {
+	.panel.spotlightsolid {
+		-moz-align-items: -moz-stretch;
+		-webkit-align-items: -webkit-stretch;
+		-ms-align-items: -ms-stretch;
+		align-items: stretch;
+		position: relative;
+	}
+
+		.panel.spotlightsolid > * {
+			z-index: 1;
+		}
+
+		.panel.spotlightsolid .content {
+			display: -moz-flex;
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+			-moz-flex-direction: column;
+			-webkit-flex-direction: column;
+			-ms-flex-direction: column;
+			flex-direction: column;
+			-moz-justify-content: center;
+			-webkit-justify-content: center;
+			-ms-justify-content: center;
+			justify-content: center;
+			padding: 3.5rem 3.5rem 2rem 3.5rem ;
+            color: rgba(000, 000, 000, 1.0);
+
+		}
+        
+		.panel.spotlightsolid .image {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 0;
+		}
+
+			.panel.spotlightsolid .image img {
+				-moz-object-fit: cover;
+				-webkit-object-fit: cover;
+				-ms-object-fit: cover;
+				object-fit: cover;
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+
+		.panel.spotlightsolid.left {
+			-moz-justify-content: -moz-flex-start;
+			-webkit-justify-content: -webkit-flex-start;
+			-ms-justify-content: -ms-flex-start;
+			justify-content: flex-start;
+		}
+            .panel.spotlightsolid.left  .iframe {
+                  width: 100%;
+                  height: 100%;
+                  border: none; /* Optional: to remove iframe border */
+                }
+			.panel.spotlightsolid.left .content {
+				background-image: linear-gradient(45deg, #009FA1 20%, #009FA1 60%, #009FA1);;
+			}
+
+		.panel.spotlightsolid.right {
+			-moz-justify-content: -moz-flex-end;
+			-webkit-justify-content: -webkit-flex-end;
+			-ms-justify-content: -ms-flex-end;
+			justify-content: flex-end;
+		}
+
+			.panel.spotlightsolid.right .content {
+				background-image: linear-gradient(45deg, #009FA1 20%, #009FA1 60%, #009FA1);
+			}
+
+	@media screen and (max-width: 13736px) {
+
+		.panel.spotlightsolid .content {
+			padding: 2.8875rem 1.75rem 1.3875rem 1.75rem ;
+			-moz-flex-direction: column !important;
+			-webkit-flex-direction: column !important;
+			-ms-flex-direction: column !important;
+			flex-direction: column !important;
+			background-image: linear-gradient(45deg, #009FA1 20%, #009FA1 60%, #009FA1);!important;
+			min-height: 25rem;
+		}
+
+	}
+
+	@media screen and (max-width: 480px) {
+
+		.panel.spotlightsolid .content {
+			min-height: 30rem;
+		}
+
+	}
+
+
+.panel.spotlight {
 		-moz-align-items: -moz-stretch;
 		-webkit-align-items: -webkit-stretch;
 		-ms-align-items: -ms-stretch;
